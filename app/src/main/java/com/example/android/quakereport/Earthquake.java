@@ -8,13 +8,13 @@ public class Earthquake {
     private Double mMagnitude;
     private String mDate;
 
-    public Earthquake(String location, Double magnitute, String date){
+    public Earthquake(Double magnitute, String location, String date){
         mLocation = location;
         mMagnitude = magnitute;
         mDate = date;
 
     }
-    public Date getmDate() {
+    public String getmDate() {
         return mDate;
     }
     public Double getmMagnitude() {
