@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
     <TextView
@@ -8,20 +10,33 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:id="@+id/magnitude"
-        android:text="20"
+        tools:text="20"
         />
-
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_offset"
+        tools:text="N of South"
+        android:layout_weight="1"/>
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/location"
-        android:text="London"
+        tools:text="London"
         android:layout_weight="1"/>
+
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/date"
-        android:text="January 20th, 2018"
+        tools:text= "Jan 20th, 2018"
         android:layout_weight="1"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:layout_weight="1"
+        tools:text="3:00 PM">
 
+    </TextView>
 </LinearLayout>
